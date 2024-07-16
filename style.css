@@ -1,9 +1,17 @@
+h1{
+  font-family: cursive;
+    text-align: center;
+    margin-top: 50px;
+    color: #f4c804;
+
+}
 button{
     display: inline-block;
     padding: 20px 20px;
     margin: 0px 70px;
     margin-bottom: 90px;
     border-left: 40px;
+    font-family: cursive;
     background-color: #f4c804;
     color: black;
     text-decoration: none;
@@ -29,3 +37,14 @@ img {
   height: 350px ;
     border-radius: 100px 100px 100px 100px;
   }
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4c804;
+    font-family: cursive;
+    height: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
