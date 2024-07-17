@@ -7,45 +7,53 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <div class="header">
+      <nav>
+        <div class="burger-menu">
+            &#x2630;
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    <div class="hero">
+      <h1>Doc Store</h1>
+      <p>Get it when you need it</p>
+  </div>
     </div>
-    <h1>Upload a document</h1>
-    <div class="card">
-        <img src="./images/word.png" alt="display word document" style="width: 100%">
+    <h2>Upload a Document</h2>
+    <div class="card", id="word">
+        <img src="./images/word.png" alt="display word document">
         <div class="container">
           <h4><button>add a word document</button></h4>
         </div>
       </div>
-    <div class="card">
-        <img src="./images/pdf.png" alt="display pdf" style="width: 100%">
+    <div class="card", id="pdf">
+        <img src="./images/pdf.png" alt="display pdf">
         <div class="container">
           <h4><button>add a pdf document</button></h4>
         </div>
         </div>
-        <div class="card">
-            <img src="./images/excel.png" alt="display excel" style="width: 100%">
+        <div class="card", id="excel">
+            <img src="./images/excel.png" alt="display excel">
             <div class="container">
               <h4><button>add an excel document</button></h4>
             </div>
           </div>
-            <div class="card">
-                <img src="./images/ppt.png" alt="display powerpoint" style="width: 100%">
+            <div class="card", id="ppt">
+                <img src="./images/ppt.png" alt="display powerpoint">
                 <div class="container">
                 <h4><button>add a power point presentation</button></h4>
                 </div>
                 </div>
-                <div class="card">
-                    <img src="./images/image-icon.png" alt="display add image" style="width: 100%">
+                <div class="card", id="image-icon">
+                    <img src="./images/image-icon.png" alt="display add image">
                     <div class="container">
                     <h4><button>add an image</button></h4>
                     </div>
                     </div>
+<script src="index.js"></script>
 </body>
 </html>

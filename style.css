@@ -3,12 +3,19 @@ h1{
     text-align: center;
     margin-top: 50px;
     color: #f4c804;
-
 }
+
+h2{
+  font-family: cursive;
+    text-align: center;
+    margin-top: 50px;
+    color: #f4c804;
+}
+
 button{
-    display: inline-block;
+    display: flex;
     padding: 20px 20px;
-    margin: 0px 70px;
+    margin: auto;
     margin-bottom: 90px;
     border-left: 40px;
     font-family: cursive;
@@ -34,17 +41,51 @@ button{
     padding: 5px;
   }
 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
   height: 350px ;
-    border-radius: 100px 100px 100px 100px;
+  width: 350px;
   }
 
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4c804;
-    font-family: cursive;
-    height: 100px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+nav {
+  background-color: #f4c804;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.hero {
+  color: #e8af05;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-image: url('https://snipboard.io/LNty0S.jpg');
+  background-position: center;
+  background-size: cover;
 }
