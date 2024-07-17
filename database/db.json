@@ -1,0 +1,54 @@
+{
+    "documents": [
+        {
+            "id": "1",
+            "type": "word",
+            "title": "example/document1"
+        },
+        {
+            "id": "2",
+            "type": "word",
+            "title": "example/document2"
+        },
+        {
+            "id": "3",
+            "type": "excel",
+            "title": "example/document3"
+        },
+        {
+            "id": "4",
+            "type": "excel",
+            "title": "example/document4"
+        },
+        {
+            "id": "5",
+            "type": "powerpoint",
+            "title": "example/document5"
+        },
+        {
+            "id": "6",
+            "type": "powerpoint",
+            "title": "example/document6"
+        },
+        {
+            "id": "7",
+            "type": "pdf",
+            "title": "example/document7"
+        },
+        {
+            "id": "8",
+            "type": "pdf",
+            "title": "example/document8"
+        },
+        {
+            "id": "9",
+            "type": "images",
+            "title": "example/document9"
+        },
+        {
+            "id": "10",
+            "type": "images",
+            "title": "example/document10"
+        }
+    ]
+}

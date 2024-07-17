@@ -1,22 +1,33 @@
-    document.addEventListener('DOMContentLoaded', () => {
-        // Select all buttons inside cards
-        const buttons = document.querySelectorAll('.card button');
+document.addEventListener('DOMContentLoaded', () => {
+  // Fetch images from server
+  fetch("http://localhost:8080/path/to/images.db")
+    .then((resp) => resp.json())
+    .then((json) => console.log(json));
+
+  // Add click event listener to a specific element, for example a button
+  const addWord = document.getElementById('word');
+  const addPdf = document.getElementById('pdf');
+  const addExcel = document.getElementById('excel');
+  const addPpt = document.getElementById('ppt');
+  const addImage = document.getElementById('image-icon');
+
+  addWord.addEventListener('click', () => {
+    // navigate to word page
+    window.location.href = 'word.html';});
+
+    //navigate to pdf page
+    addPdf.addEventListener('click', () => {
+      window.location.href = 'pdf.html';});
+
+    //navigate to excel page
+    addExcel.addEventListener('click', () => {
+      window.location.href = 'excel.html';});
         
-        // Loop through each button and add a mouseover event listener
-        buttons.forEach((button, index) => {
-          button.addEventListener('mouseover', () => {
-            // Select the corresponding card
-            const card = document.getElementById(`card${index + 1}`);
-            // Set the transition and change the opacity
-            card.style.transition = 'opacity 1s';
-            card.style.opacity = 0.3;
-          });
-      
-          //add a mouseout event to revert the opacity change
-          button.addEventListener('mouseout', () => {
-            const card = document.getElementById(`card${index + 1}`);
-            card.style.transition = 'opacity 1s';
-            card.style.opacity = 1;
-          });
-        });
-      });
+    //navigate to ppt page
+    addPpt.addEventListener('click', () => {
+      window.location.href = 'powerpoints.html';});
+
+    //navigate to image page
+    addImage.addEventListener('click', () => {
+      window.location.href = 'images.html';});
+})
