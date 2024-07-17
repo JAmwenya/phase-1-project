@@ -1,54 +1,137 @@
 {
-    "documents": [
-        {
-            "id": "1",
-            "type": "word",
-            "title": "example/document1"
-        },
-        {
-            "id": "2",
-            "type": "word",
-            "title": "example/document2"
-        },
-        {
-            "id": "3",
-            "type": "excel",
-            "title": "example/document3"
-        },
-        {
-            "id": "4",
-            "type": "excel",
-            "title": "example/document4"
-        },
-        {
-            "id": "5",
-            "type": "powerpoint",
-            "title": "example/document5"
-        },
-        {
-            "id": "6",
-            "type": "powerpoint",
-            "title": "example/document6"
-        },
-        {
-            "id": "7",
-            "type": "pdf",
-            "title": "example/document7"
-        },
-        {
-            "id": "8",
-            "type": "pdf",
-            "title": "example/document8"
-        },
-        {
-            "id": "9",
-            "type": "images",
-            "title": "example/document9"
-        },
-        {
-            "id": "10",
-            "type": "images",
-            "title": "example/document10"
-        }
-    ]
+  "documents": [
+    {
+      "0": {
+        "fileName": "",
+        "addWord": ""
+      },
+      "id": "d5c4"
+    },
+    {
+      "0": {
+        "fileName": "some",
+        "addWord": ""
+      },
+      "id": "4629"
+    },
+    {
+      "0": {
+        "fileName": "",
+        "addWord": ""
+      },
+      "id": "19d3"
+    },
+    {
+      "0": {
+        "fileName": "new",
+        "addWord": ""
+      },
+      "id": "4b96"
+    },
+    {
+      "0": {
+        "fileName": "new",
+        "addWord": ""
+      },
+      "id": "bf21"
+    },
+    {
+      "0": {
+        "fileName": "some-document",
+        "addWord": ""
+      },
+      "id": "2112"
+    },
+    {
+      "0": {
+        "fileName": "some-document",
+        "addWord": ""
+      },
+      "id": "8978"
+    },
+    {
+      "0": {
+        "fileName": "some-document",
+        "addWord": ""
+      },
+      "id": "64c5"
+    },
+    {
+      "0": {
+        "fileName": "some-document",
+        "addWord": ""
+      },
+      "id": "a7c7"
+    },
+    {
+      "0": {
+        "fileName": "",
+        "addWord": ""
+      },
+      "id": "d922"
+    },
+    {
+      "0": {
+        "fileName": "some",
+        "addWord": ""
+      },
+      "id": "28fe"
+    },
+    {
+      "0": {
+        "fileName": "thing",
+        "addWord": "C:\\fakepath\\Database1.accdb"
+      },
+      "id": "1984"
+    },
+    {
+      "0": {
+        "fileName": "thing",
+        "addWord": "C:\\fakepath\\Database1.accdb"
+      },
+      "id": "9f65"
+    },
+    {
+      "0": {
+        "fileName": "",
+        "addWord": ""
+      },
+      "id": "6298"
+    },
+    {
+      "0": {
+        "fileName": "",
+        "addWord": ""
+      },
+      "id": "1949"
+    },
+    {
+      "0": {
+        "fileName": "",
+        "addWord": ""
+      },
+      "id": "56c2"
+    },
+    {
+      "0": {
+        "fileName": "",
+        "addWord": ""
+      },
+      "id": "f73a"
+    },
+    {
+      "0": {
+        "fileName": "seriously",
+        "addWord": "C:\\fakepath\\Database1.accdb"
+      },
+      "id": "3aca"
+    },
+    {
+      "0": {
+        "fileName": "yeeey",
+        "addWord": "C:\\fakepath\\Database1.accdb"
+      },
+      "id": "2305"
+    }
+  ]
 }
