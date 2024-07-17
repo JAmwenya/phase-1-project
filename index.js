@@ -1,6 +1,3 @@
-document.addEventListener('DOMContentLoaded',()=> {
-    // Add mouseover event listener to the buttons
-    const buttons = document.querySelectorAll('.card button');
     document.addEventListener('DOMContentLoaded', () => {
         // Select all buttons inside cards
         const buttons = document.querySelectorAll('.card button');
@@ -12,10 +9,10 @@ document.addEventListener('DOMContentLoaded',()=> {
             const card = document.getElementById(`card${index + 1}`);
             // Set the transition and change the opacity
             card.style.transition = 'opacity 1s';
-            card.style.opacity = 0.5;
+            card.style.opacity = 0.3;
           });
       
-          // Optionally add a mouseout event to revert the opacity change
+          //add a mouseout event to revert the opacity change
           button.addEventListener('mouseout', () => {
             const card = document.getElementById(`card${index + 1}`);
             card.style.transition = 'opacity 1s';
@@ -23,11 +20,3 @@ document.addEventListener('DOMContentLoaded',()=> {
           });
         });
       });
-      
-//     document.getElementById('button').addEventListener('mouseover',()=>{
-//     const card = document.getElementById('card');
-//     //change the opacity of the card when you hover over the button
-//     card.style.transition = 'opacity 1s';
-//     card.style.opacity = 0.1;
-//     });
-//   });
