@@ -1,82 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>home</title>
-  </head>
-  <body>
-    <div class="header">
-      <nav>
-        <div class="burger-menu">&#x2630;</div>
-        <ul class="nav-links">
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./members.html">Members</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="hero">
-        <h1>Doc Store</h1>
-        <p>Get it when you need it</p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>home</title>
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <div class="burger-menu">&#x2630;</div>
+      <ul class="nav-links">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./members.html">Members</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>Doc Store</h1>
+      <p>Get it when you need it</p>
     </div>
-    <h2>Upload a Document</h2>
-    <div class="card">
-      <img src="./images/word.png" alt="display word document" />
-      <div class="container">
-        <form id="myForm" action="" method="">
-          <label for="title">Title:</label>
-          <br />
-          <input
-            id="title"
-            type="text"
-            name="title"
-            placeholder="document name"
-            required
-          />
-          <br />
-          <label for="word">Word Document:</label>
-          <br />
-          <input
-            id="word"
-            type="file"
-            name="word"
-            placeholder="document"
-            accept="document/*"
-            required
-          />
-          <input type="submit" value="add word document" id="submitButton" />
-        </form>
-      </div>
+  </div>
+  <h2>Upload a Document</h2>
+  <div class="card">
+    <img src="./images/upload_photo.png" alt="add document" />
+    <div class="container">
+      <form id="myForm" action="" method="">
+        <label for="title">Title:</label>
+        <input
+          id="title"
+          type="text"
+          name="title"
+          placeholder="insert document name"
+          required
+        />
+        <br />
+        <input
+          id="word"
+          type="file"
+          name="word"
+          placeholder="document"
+          accept=".doc,.docx,.pdf"
+          required
+        />
+        <br />
+        <label for="upload">click the upload button:</label>
+        <input type="submit" value="upload" id="submitButton" />
+      </form>
+      <br />
     </div>
-    <!--<div class="card">
-        <img src="./images/pdf.png" alt="display pdf">
-        <div class="container">
-          <form id="myForm1" enctype="multipart/form-data" action="database/db.json" method="post">
-            <input id="pdf" type="file" name="input" placeholder="document name" accept="document">
-            <button type="submit" id="submitButton">add pdf</button>
-        </form>
-        </div>
-        </div>
-        <div class="card">
-            <img src="./images/excel.png" alt="display excel">
-            <div class="container">
-              <form id="myForm2" enctype="multipart/form-data" action="database/db.json" method="post">
-                <input type="file" name="input" placeholder="document name" accept="document">
-                <button type="submit" id="submitButton">add excel document</button>
-            </form>
-            </div>
-          </div>
-            <div class="card">
-                <img src="./images/ppt.png" alt="display powerpoint">
-                <div class="container">
-                  <form id="myForm3" enctype="multipart/form-data" action="database/db.json" method="post">
-                    <input type="file" name="input" placeholder="document name" accept="document">
-                    <button type="submit" id="submitButton">add powerpoint</button>
-                </form>
-                </div>
-                </div> -->
-    <script src="index.js"></script>
-  </body>
+  </div>
+  <br />
+  <br />
+  <h2>Uploaded Documents</h2>
+  <div id="documentList"></div>
+  <script src="index.js"></script>
+</body>
 </html>
