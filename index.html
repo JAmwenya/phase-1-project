@@ -11,9 +11,9 @@
     <nav>
       <div class="burger-menu">&#x2630;</div>
       <ul class="nav-links">
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./members.html">Members</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div class="hero">
@@ -21,9 +21,10 @@
       <p>Get it when you need it</p>
     </div>
   </div>
+
   <h2>Upload a Document</h2>
   <div class="card">
-    <img src="./images/upload_photo.png" alt="add document" />
+    <img src="./images/DOCUMENT MANAGER SITE (1).png" alt="add document" />
     <div class="container">
       <form id="myForm" action="" method="">
         <label for="title">Title:</label>
@@ -50,10 +51,55 @@
       <br />
     </div>
   </div>
-  <br />
-  <br />
+
+  <br /><br />
+  <h2>Search Documents</h2>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search documents by title">
+    <button id="searchButton">Search</button>
+  </div>
   <h2>Uploaded Documents</h2>
-  <div id="documentList"></div>
+  <div id="documentList" class="document-grid"></div>
+
+  <div id="about" class="card">
+    <h2>About</h2>
+    <p>
+      Doc Store is a document management system that allows users to upload
+      documents and access them when needed. It is a simple and efficient way
+      to store and retrieve documents.
+    </p>
+  </div>
+
+  <div id="members" class="card">
+    <h2>Members</h2>
+    <p>
+      Our team consists of dedicated professionals committed to providing
+      the best document management solutions.
+    </p>
+  </div>
+
+  <div id="contact" class="card">
+    <h2>Contact</h2>
+    <p>
+      For any enquiries, Reach out to us at:
+      <br>
+       email: contact@docstore.com
+       <br>
+       phone: 123-456-7890
+    </p>
+  </div>
+
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2024 Doc Store</p>
+  </footer>
+  
   <script src="index.js"></script>
 </body>
 </html>

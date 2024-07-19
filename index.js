@@ -63,13 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function updateDocument(id, updatedDocument) {
+  function updateDocument(id, updated) {
     fetch(`http://localhost:3000/documents/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(updatedDocument),
+      body: JSON.stringify(updated),
     })
     .then((response) => {
       if (!response.ok) {
@@ -137,6 +137,20 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error("Failed to fetch documents:", error);
     });
   }
+
+  searchButton.addEventListener('click', () => {
+    const query = searchInput.value.toLowerCase();
+    const documents = document.querySelectorAll('.document');
+
+    documents.forEach(doc => {
+      const title = doc.querySelector('p').innerText.toLowerCase();
+      if (title.includes(query)) {
+        doc.style.display = 'block';
+      } else {
+        doc.style.display = 'none';
+      }
+    });
+  });
 
   renderDocuments();
 });

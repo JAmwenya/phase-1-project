@@ -1,22 +1,11 @@
 body{
   font-size: 16px;
+  background-color: white;
 }
 
 .container {
   width: 100%;
   padding: 10px;
-}
-
-/* Styles for tablets */
-@media (min-width: 600px) {
-  body {
-    font-size: 18px;
-  }
-
-  .container {
-    width: 90%;
-    padding: 20px;
-  }
 }
 
 /* Styles for desktops */
@@ -73,7 +62,7 @@ button{
     transition: 0.3s;
     border-radius: 5px;
     width: 40%;
-    height: 450px;
+    height: 610px;
     margin: auto;
     margin-top: auto;
     margin-bottom: 30px;
@@ -91,6 +80,7 @@ img {
 
 nav {
   background-color: #f4c804;
+  font-family: cursive;
   height: 60px;
   display: flex;
   align-items: center;
@@ -190,4 +180,75 @@ form label {
   font-family: cursive;
   background-color: #f4c804;
   color: black;
+}
+
+/* Container for the documents grid */
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Style for each document item */
+.document {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.document:hover {
+  transform: translateY(-10px);
+}
+
+.document p {
+  margin: 10px 0;
+  font-family: cursive;
+  color: #333;
+}
+
+.document button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #f4c804;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.document button:hover {
+  background-color: #e0a800;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 200px;
+  font-family: cursive;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#searchButton {
+  padding: 10px;
+  font-family: cursive;
+  background-color: #f4c804;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
