@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const documentList = document.getElementById('documentList');
   const submitButton = document.getElementById('submitButton');
   const updateButton = document.getElementById('updateButton');
+  const searchButton = document.getElementById('searchButton'); // Ensure this element exists
+  const searchInput = document.getElementById('searchInput'); // Ensure this element exists
 
   let editMode = false;
   let editId = null;
@@ -12,16 +14,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const addWord = document.getElementById('word').value;
     const fileName = document.getElementById('title').value;
-    const wordDocuments = {
-      fileName: fileName,
-      addWord: addWord,
+
+    const fileInput = document.getElementById('word');
+    const file = fileInput.files[0];
+
+    if (!file) {
+      alert("Please select a file");
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onloadend = function() {
+      const base64String = reader.result.split(',')[1];
+
+      const wordDocuments = {
+        fileName: fileName,
+        addWord: addWord,
+        word: `data:${file.type};base64,${base64String}`
+      };
+
+      if (editMode) {
+        updateDocument(editId, wordDocuments);
+      } else {
+        postWordDocument(wordDocuments);
+      }
     };
 
-    if (editMode) {
-      updateDocument(editId, wordDocuments);
-    } else {
-      postWordDocument(wordDocuments);
-    }
+    reader.readAsDataURL(file);
   });
 
   function postWordDocument(wordDocuments) {
@@ -121,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.edit-button').forEach(button => {
         button.addEventListener('click', () => {
           const id = button.getAttribute('data-id');
-          const documentToEdit = documents.find(doc => doc.id === id);
+          const documentToEdit = documents.find(doc => doc.id == id);
           if (documentToEdit) {
             document.getElementById('title').value = documentToEdit.fileName;
             document.getElementById('word').value = documentToEdit.addWord;
