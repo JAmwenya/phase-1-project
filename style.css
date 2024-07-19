@@ -1,3 +1,36 @@
+body{
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Styles for tablets */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Styles for desktops */
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 80%;
+    padding: 30px;
+  }
+}
+
 h1{
   font-family: cursive;
     text-align: center;
@@ -5,11 +38,19 @@ h1{
     color: #f4c804;
 }
 
+/* Styles for h2 elements */
 h2{
   font-family: cursive;
     text-align: center;
     margin-top: 50px;
     color: #f4c804;
+}
+
+p{
+  font-family: cursive;
+  text-align: center;
+  margin-top: 50px;
+  color: #f4c804;
 }
 
 button{
@@ -76,6 +117,7 @@ nav ul li a {
     display: none;
 }
 
+/* Styles for the hero section */
 .hero {
   color: #e8af05;
   height: 100vh;
@@ -89,6 +131,7 @@ nav ul li a {
   background-size: cover;
 }
 
+/* Styles for input button*/
 input[type="text"] {
   display: flex;
     padding: 5px 5px;
@@ -141,6 +184,7 @@ form label {
     cursor: pointer;
 }
 
+/* Styles for upload button*/
 ::-webkit-file-upload-button {
   display: table-column;
   font-family: cursive;
